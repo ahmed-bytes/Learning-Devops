@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Prompts the user
+echo "Devex Should I list all the hidden files and directorys here?"
+echo "yes or no"
+read input
+
+
+#conditions to list all the hidden files and dirctories or normal files and directories
+if [[ "$input" == "yes" ]];
+then
+	echo "This are all the hidden files and directories here"
+	ls -a
+else
+	echo "This are all the unhidden files and directories here"
+	ls
+fi

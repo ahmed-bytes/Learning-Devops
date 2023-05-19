@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Input the first integer: " X;
+read -p "Input the second integer: " Y;
+
+if [ $((X,Y <= 100 || X,Y > 0)) ];
+then
+	echo "$((X + Y))";
+	echo "$((X - Y))";
+	echo "$((X * Y))";
+	echo "$((X / Y))";
+else
+	echo "Not an Integer"
+fi
